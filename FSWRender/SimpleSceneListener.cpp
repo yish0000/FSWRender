@@ -21,7 +21,7 @@ SimpleSceneListener::SimpleSceneListener(FSWDevice* pDevice)
 	: FrameListener(pDevice)
 {
 	m_pTexture = new FSWTexture();
-	if( !m_pTexture->LoadFromBitmap("texture.bmp") )
+	if( !m_pTexture->LoadFromBitmap("../Bin/texture.bmp") )
 	{
 		delete m_pTexture;
 		m_pTexture = NULL;
