@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36CAEEA6-8BE6-4E4F-B749-DD28DCBDB35B}</ProjectGuid>
+    <RootNamespace>FSWRender</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)FSWRender_d.exe ..\Bin\FSWRender_d.exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)FSWRender.exe ..\Bin\FSWRender.exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="LogFile.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="FSWDevice.h" />
+    <ClInclude Include="FSWPainter.h" />
+    <ClInclude Include="FSWSurface.h" />
+    <ClInclude Include="FSWTexture.h" />
+    <ClInclude Include="FSWTypes.h" />
+    <ClInclude Include="FSWGouraudPainter.h" />
+    <ClInclude Include="FSWGouraudWirePainter.h" />
+    <ClInclude Include="FSWTextureGouraudPainter.h" />
+    <ClInclude Include="FSWTextureWirePainter.h" />
+    <ClInclude Include="FSWPostASCII.h" />
+    <ClInclude Include="FSWPostBloom.h" />
+    <ClInclude Include="FSWPostBW.h" />
+    <ClInclude Include="FSWPostDither.h" />
+    <ClInclude Include="FSWPostEffect.h" />
+    <ClInclude Include="FSWPostEmbossed.h" />
+    <ClInclude Include="FSWPostGlass.h" />
+    <ClInclude Include="FSWPostInvert.h" />
+    <ClInclude Include="FSWPostMotionBlur.h" />
+    <ClInclude Include="FSWPostNightVision.h" />
+    <ClInclude Include="FSWPostOldMovie.h" />
+    <ClInclude Include="FSWPostOldTV.h" />
+    <ClInclude Include="FSWPostRadialBlur.h" />
+    <ClInclude Include="FSWPostTiling.h" />
+    <ClInclude Include="FSWDeviceHelper.h" />
+    <ClInclude Include="FrameListener.h" />
+    <ClInclude Include="SimpleSceneListener.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="WinApp.h" />
+    <ClInclude Include="FSWCamera.h" />
+    <ClInclude Include="FSWModel.h" />
+    <ClInclude Include="FSWScene.h" />
+    <ClInclude Include="FSWSceneNode.h" />
+    <ClInclude Include="FSWSceneObject.h" />
+    <ClInclude Include="CameraInputFilter.h" />
+    <ClInclude Include="InputFilter.h" />
+    <ClInclude Include="SysInputFilter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LogFile.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="FSWDevice.cpp" />
+    <ClCompile Include="FSWPainter.cpp" />
+    <ClCompile Include="FSWSurface.cpp" />
+    <ClCompile Include="FSWTexture.cpp" />
+    <ClCompile Include="FSWGouraudPainter.cpp" />
+    <ClCompile Include="FSWGouraudWirePainter.cpp" />
+    <ClCompile Include="FSWTextureGouraudPainter.cpp" />
+    <ClCompile Include="FSWTextureWirePainter.cpp" />
+    <ClCompile Include="FSWPostASCII.cpp" />
+    <ClCompile Include="FSWPostBloom.cpp" />
+    <ClCompile Include="FSWPostBW.cpp" />
+    <ClCompile Include="FSWPostDither.cpp" />
+    <ClCompile Include="FSWPostEffect.cpp" />
+    <ClCompile Include="FSWPostEmbossed.cpp" />
+    <ClCompile Include="FSWPostGlass.cpp" />
+    <ClCompile Include="FSWPostInvert.cpp" />
+    <ClCompile Include="FSWPostMotionBlur.cpp" />
+    <ClCompile Include="FSWPostNightVision.cpp" />
+    <ClCompile Include="FSWPostOldMovie.cpp" />
+    <ClCompile Include="FSWPostOldTV.cpp" />
+    <ClCompile Include="FSWPostRadialBlur.cpp" />
+    <ClCompile Include="FSWPostTiling.cpp" />
+    <ClCompile Include="FSWDeviceHelper.cpp" />
+    <ClCompile Include="SimpleSceneListener.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="WinApp.cpp" />
+    <ClCompile Include="FSWCamera.cpp" />
+    <ClCompile Include="FSWModel.cpp" />
+    <ClCompile Include="FSWScene.cpp" />
+    <ClCompile Include="FSWSceneNode.cpp" />
+    <ClCompile Include="FSWSceneObject.cpp" />
+    <ClCompile Include="CameraInputFilter.cpp" />
+    <ClCompile Include="InputFilter.cpp" />
+    <ClCompile Include="SysInputFilter.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

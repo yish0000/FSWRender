@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3ecc36a5-dc6f-429c-b800-99c8ec170682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{86b378cd-84b5-4728-97fc-44a591409bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{c2ac5664-6884-4ac4-97f8-0039cded1de6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Shading">
+      <UniqueIdentifier>{17c02546-5ef1-4f09-880e-182c57d50584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\PostProcess">
+      <UniqueIdentifier>{f2a64c88-b10a-41f3-b59a-d9617ec29589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Util">
+      <UniqueIdentifier>{a8c334d8-f07d-45ea-9002-9fb97619d2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{1f645c7d-bea0-4b53-ba17-16a33552459f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{45dca961-6386-4710-9fa7-e17da9e7e185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{a92ed169-d72f-44f3-8381-0243384b6984}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWDevice.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPainter.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWSurface.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWTexture.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWTypes.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWGouraudPainter.h">
+      <Filter>Render\Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWGouraudWirePainter.h">
+      <Filter>Render\Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWTextureGouraudPainter.h">
+      <Filter>Render\Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWTextureWirePainter.h">
+      <Filter>Render\Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostASCII.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostBloom.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostBW.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostDither.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostEffect.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostEmbossed.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostGlass.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostInvert.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostMotionBlur.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostNightVision.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostOldMovie.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostOldTV.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostRadialBlur.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWPostTiling.h">
+      <Filter>Render\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWDeviceHelper.h">
+      <Filter>Render\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameListener.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSceneListener.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="WinApp.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWCamera.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWModel.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWSceneNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="FSWSceneObject.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraInputFilter.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputFilter.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="SysInputFilter.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LogFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWDevice.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPainter.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWSurface.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWTexture.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWGouraudPainter.cpp">
+      <Filter>Render\Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWGouraudWirePainter.cpp">
+      <Filter>Render\Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWTextureGouraudPainter.cpp">
+      <Filter>Render\Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWTextureWirePainter.cpp">
+      <Filter>Render\Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostASCII.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostBloom.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostBW.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostDither.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostEffect.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostEmbossed.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostGlass.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostInvert.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostMotionBlur.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostNightVision.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostOldMovie.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostOldTV.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostRadialBlur.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWPostTiling.cpp">
+      <Filter>Render\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWDeviceHelper.cpp">
+      <Filter>Render\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleSceneListener.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="WinApp.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWCamera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWModel.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWSceneNode.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FSWSceneObject.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraInputFilter.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="InputFilter.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="SysInputFilter.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>
